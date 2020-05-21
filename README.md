@@ -32,7 +32,8 @@ Essa combinação de valores deve ser utilizada para preencher a cor de fundo de
 Além disso, inclua três inputs de texto somente-leitura (desabilitados) para a visualização do valor atual de cada input do tipo range.
 À medida em que o usuário modifica o valor dos ranges com as teclas ← e → do teclado, a <div> deve refletir a cor correspondente.
 A imagem abaixo ilustra uma possível interface para a aplicação.
-  
+  ![rbg igit](https://user-images.githubusercontent.com/53823948/82613611-16ec2680-9b9c-11ea-8369-0576fa14acf5.png)
+
  Dicas
 
 Utilize o método load de window.addEventListener para garantir que o DOM esteja totalmente carregado antes de qualquer instrução JavaScript.
@@ -40,3 +41,5 @@ Utilize id's nos inputs e na div para mapeá-los no script com document.querySel
 Não se preocupe tanto com a interface gráfica. O mais importante é o código estar funcionando.
 Para definir a cor da div, utilize style.backgroundColor. O valor deve ser uma string que, por sua vez, interpola a função rgb() do CSS. Mais informações aqui (Links para um site externo.).
 Mais alguns valores de referência:
+
+![rbg igit](https://user-images.githubusercontent.com/53823948/82613497-ca085000-9b9b-11ea-8be8-e48dba5c50ff.png)
