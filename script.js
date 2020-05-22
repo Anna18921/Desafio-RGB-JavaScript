@@ -1,28 +1,33 @@
-const inputR = document.getElementById("rangeR");
-const inputG = document.getElementById("rangeG");
-const inputB = document.getElementById("rangeB");
+window.addEventListener("load", start);
 
-const valueR = document.getElementById("valueR");
-const valueG = document.getElementById("valueG");
-const valueB = document.getElementById("valueB");
+var inputR = null;
+var inputG = null;
+var inputB = null;
 
-inputR.value = 0;
-inputG.value = 0;
-inputB.value = 0;
+var valueR = null;
+var valueG = null;
+var valueB = null;
 
-const divColor = document.getElementById("divColor");
-
-divColor.style.backgroundColor =
-  "rgb(" + inputR.value + "," + inputG.value + "," + inputB.value + ")";
+var divColor = null;
 
 function start() {
+  inputR = document.getElementById("rangeR");
+  inputG = document.getElementById("rangeG");
+  inputB = document.getElementById("rangeB");
+
+  valueR = document.getElementById("valueR");
+  valueG = document.getElementById("valueG");
+  valueB = document.getElementById("valueB");
+
+  divColor = document.getElementById("divColor");
+
   valueR.value = inputR.value;
   valueG.value = inputG.value;
   valueB.value = inputB.value;
 
-  inputR.addEventListener("change", changeValueR);
-  inputG.addEventListener("change", changeValueG);
-  inputB.addEventListener("change", changeValueB);
+  inputR.addEventListener("input", changeValueR);
+  inputG.addEventListener("input", changeValueG);
+  inputB.addEventListener("input", changeValueB);
 }
 
 function changeValueR() {
@@ -42,5 +47,3 @@ function chageColor() {
   divColor.style.backgroundColor =
     "rgb(" + inputR.value + "," + inputG.value + "," + inputB.value + ")";
 }
-
-window.addEventListener("load", start);
